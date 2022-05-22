@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="giatri1">
+<input type="number" id="giatri2"><br>
+<br>
+<button onclick="phepcong ()" id="phepcong">Addition(+)</button>
+<button onclick="pheptru ()" id="pheptru">Subraction(-)</button>
+<button onclick="phepnhan ()" id="phepnhan">Multiplication(*)</button>
+<button onclick="phepchia ()" id="phepchia">Division(/)</button>
+<br>
+<p>Result:<span id="result"></span></p>
+<script>
+    function phepcong () {
+        let giatri1 = document.getElementById("giatri1").value;
+        let giatri2 = document.getElementById("giatri2").value;
+        let phepcong = parseInt(giatri1) + parseInt(giatri2);
+        document.getElementById("result").innerText = phepcong
+    }
+    function pheptru () {
+        let giatri1 = document.getElementById("giatri1").value;
+        let giatri2 = document.getElementById("giatri2").value;
+        let pheptru = parseInt(giatri1) - parseInt(giatri2);
+        document.getElementById("result").innerText = pheptru
+
+    }
+    function phepnhan () {
+        let giatri1 = document.getElementById("giatri1").value;
+        let giatri2 = document.getElementById("giatri2").value;
+        let phepnhan = parseInt(giatri1) * parseInt(giatri2);
+        document.getElementById("result").innerText = phepnhan
+
+    }
+    function phepchia () {
+        let giatri1 = document.getElementById("giatri1").value;
+        let giatri2 = document.getElementById("giatri2").value;
+        let phepchia = parseInt(giatri1) / parseInt(giatri2);
+        document.getElementById("result").innerText =phepchia
+    }
+</script>
+</body>
+</html>
