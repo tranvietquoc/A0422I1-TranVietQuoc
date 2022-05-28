@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 10: Tính giá điện
+
+    let a = parseInt(prompt('Nhập kw điện'));
+    let a1 = 700; // Mức phí 100kw đầu
+    let a2 = 1000; // Mức phí 150kw tiếp theo
+    let a3 = 3000; // Mức phí trên 350kw
+    if (a<=100) {
+        alert('Số tiền phải trả:'+a*a1+'VNĐ');
+    } else if (a<=150) {
+        alert('Số tiền phải trả:'+a*a2+'VNĐ');
+    }
+    else {
+        alert('Số tiền phải trả:'+a*a3+'VNĐ');
+    }
+
+    //Bài 9: Kiểm tra cạnh tam giác
+
+    let a = parseFloat(prompt('Nhập a'));
+    let b = parseFloat(prompt('Nhập b'));
+    let c = parseFloat(prompt('Nhập c'));
+    if (a>0 && b>0 && c>0) {
+        (a+b>c && b+c>a && a+c>b)
+        alert('a,b,c là 3 cạnh của hình vuông')
+    }
+    else {
+        alert('a,b,c không phải là 3 cạnh hình vuông')
+    }
+    //Bài 8: Kiểm tra tuổi
+
+    let a = parseInt(prompt('Nhập số để kiểm tra'));
+    if (a<120 && a>0) {
+        alert('Là số tuổi của 1 người')
+    }
+    else {
+        alert('Không phải số tuổi của 1 người')
+    }
+    //Bài 7: Giải phương trình bậc 2
+    alert('Giải phương trình bậc 2 (ax^2+bx+c=0)')
+    let a = parseInt(prompt('Nhập a'));
+    let b = parseInt(prompt('Nhập b'));
+    let c = parseInt(prompt('Nhập c'));
+    if (a==0){
+        alert('Phương trình này là phương trình bậc 1')
+    }
+    else {
+        let delta = b*b - 4*a*c;
+        if (delta<0) {
+            alert('Phương trình vô nghiệm')
+        } else if (delta==0) {
+            alert('Phương trình nghiệm kép')
+            let x =b/(2*a);
+            alert(x)
+        }
+        else {
+            alert('Phương trình có 2 nghiệm phân biệt')
+            let x1 = (-b - Math.sqrt(delta))/(2*a);
+            let x2 = (-b + Math.sqrt(delta))/(2*a);
+            alert('Phương trình có nghiệm x1:' + x1);
+            alert('Phương trình có nghiệm x2:' + x2);
+        }
+    }
+    //Bài 1: Chuyển đổi nhiệt độ
+
+    let c = parseFloat(prompt('Nhập độ C'));
+    let f = c*9/5+32;
+    alert(f)
+
+    // Chuyển đổi đơn vị đo
+
+    let m = parseFloat(prompt('Nhập đơn vị (met)'));
+    let ft = m * 3.2808;
+    alert(ft);
+
+    //Bài 3: Diện tích hình vuông
+
+    let a = parseFloat(prompt('Nhập độ dài cạnh hình vuông'));
+    let s = a * a;
+    alert(s);
+
+    //Bài 4: Diện tích hình chữ nhật
+
+    let a = parseFloat(prompt('Nhập chiều dài hình chữ nhật'));
+    let b = parseFloat(prompt('Nhập chiều rộng hình chữ nhật'));
+    let s = a * b;
+    alert(s)
+
+    //Bài 5: Diện tích tam giác vuông
+
+    let a = parseFloat(prompt('Nhập độ dài cạnh góc vuông (1)'));
+    let b = parseFloat(prompt('Nhập độ dài cạnh góc vuông (2)'));
+    let s = (a * b) / 2;
+    alert(s);
+
+    //Bài 6: Giải phương trình bậc 1
+
+    let a = parseInt(prompt('Nhập a'));
+    let b = parseInt(prompt('Nhập b'));
+    let x = -b/a;
+    if (a==0 && b==0) {
+        alert('Phương trình vô số nghiệm')
+    } else if (a==0 && b!=0) {
+        alert('Phương trình vô nghiệm')
+    }
+    else {
+        alert(x)
+    }
+</script>
+
+</body>
+</html>

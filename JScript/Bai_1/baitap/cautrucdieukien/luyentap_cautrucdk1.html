@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 7: Tính cước điện thoại
+
+    let soPhut = parseFloat(prompt('Nhập số phút đã gọi'));
+    let a1 = 600; // Tiền phí 50ph đầu
+    let a2 = 400; // Tiền phí 150ph tiếp theo
+    let a3 = 200; // Tiền phí sau 200ph
+    if (soPhut<=50){
+        alert('Số tiền phí:'+soPhut*a1)
+    } else if (soPhut<=200){
+        alert('Số tiền phí:'+soPhut*a2)
+    }
+    else {
+        alert('Số tiền phí:'+soPhut*a3)
+    }
+
+    //Bài 6: Tính hoa hồng
+
+    let a = parseFloat(prompt('Nhập doanh thu'));
+    let hh1 = a/100*2; // Hoa hồng mức 1
+    let hh2 = a/100*5; // Hoa hồng mức 2
+    let hh3 = a/100*8; // Hoa hồng mức 3
+    let hh4 = a/100*10; // Hoa hồng mức 4
+    if (a<=100000) {
+        alert('Mức hoa hồng nhận được 2%');
+        alert(hh1);
+    } else if (a<=200000) {
+        alert('Mức hoa hồng nhận được 5%');
+        alert(hh2);
+    } else if (a<=300000) {
+        alert('Mức hoa hồng nhận được 8%');
+        alert(hh3);
+    }
+    else {
+        alert('Mức hoa hồng nhận được 10%');
+        alert(hh4);
+    }
+
+    //Bài 5: Điểm trung bình
+
+    let a = parseFloat(prompt('Nhập điểm bài kt'));
+    let b = parseFloat(prompt('Nhập điểm thi giữa kì'));
+    let c = parseFloat(prompt('Nhập điểm thi cuối kì'));
+    let tb = parseFloat((a+b+c)/3)
+    alert(tb)
+    if (tb>=8){
+        alert('Học lực giỏi');
+    } else if (tb>=6.5){
+        alert('Học lực khá');
+    } else if (tb>=5) {
+        alert('Học lực trung bình')
+    }
+    else {
+        alert('Học lực yếu')
+    }
+
+    //Bài 3: Kiểm tra số lơn hơn 0
+
+    let a = prompt('Nhập 1 số');
+    if (a>0)
+        alert('Là số lớn hơn 0');
+    else if (a==0) {
+        alert('Là số bằng 0');
+    }
+    else {
+        alert('Là số bé hơn 0');
+    }
+
+    //Bài 4: Xác định số lớn nhất
+
+    let a = prompt('Số a');
+    let b = prompt('Số b');
+    let c = prompt('Số c');
+
+    if (a>b && b>c) {
+        alert('A là số lớn nhất');
+    } else if (b>a && b>c) {
+        alert('B là số lớn nhất');
+    } else if (c>a && c>b) {
+        alert('C là số lớn nhất');
+    } else {
+        alert('Bạn nhập sai')
+    }
+
+    //Bài 2: Xác định tuổi
+
+    let a = prompt('Tuổi');
+    let b = 16
+    if (a>=b) {
+        alert('Đủ tuổi vào lớp 10');
+    }
+    else {
+        alert('Chưa đủ tuổi vào lớp 10');
+    }
+
+    //Bài 1: Xác định số chia hết
+
+    let a = prompt('nhập a');
+    let b = prompt('nhập b');
+    if (a % b == 0) {
+        alert('a chia hết cho b')
+    }
+    else {
+        alert('a không chia hết cho b')
+    }
+
+</script>
+
+</body>
+</html>
