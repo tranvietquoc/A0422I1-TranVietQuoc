@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Đếm từ 1 đến 100
+    let value=null;
+    do {
+        value=prompt('Nhập vào số từ 0 - 99')
+    } while (value<0 || value>99);
+    alert('Số bạn vừa nhập là:' + value)
+    if (value==99) {
+        alert('Đã hoàn thành')
+    }
+    // Nhiệt độ
+    let n = parseFloat(prompt('Nhập nhiệt độ'));
+    if (n<20) {
+        alert('Tăng nhiệt độ')
+    }
+    if (n>100) {
+        alert('Giảm nhiệt độ')
+    }
+    // Hiển thị 20 số dãy fibonacci đầu tiên
+    let n = parseInt(prompt('Nhập n'))
+    let n1 = parseInt(prompt('Nhập n1'))
+    let n2
+    for (let i=0; i<20; i++) {
+        n2=n+n1;
+        n=n1;
+        n1=n2;
+        document.write(n2)
+        document.write('&nbsp')
+        document.write('&nbsp')
+    }
+    // Số đầu tiên trong dãy fibonacci chia hết cho 5
+    let n1 = 0;
+    let n2 = 1;
+    let n3 = 0;
+    for (let i = 0; i <= 10; i++){
+        n1 = n2;
+        n2 = n3;
+        n3 = n1 + n2;
+        if(n3%5==0){
+            document.write(n3)
+            document.write('<br>')
+        }
+    }
+    // Tính tổng 20 số đầu tiền trong fibonacci
+    let n = parseInt(prompt('Nhập n'));
+    let n1 = parseInt(prompt('Nhập n1'));
+    let n2 = n+n1;
+    let tong = 0;
+    document.write('Dãy 20 số fibonacci:' + '&nbsp')
+    for (let i=0; i<20; i++) {
+        n2=n+n1;
+        n=n1;
+        n1=n2;
+        tong += n2;
+        document.write(n2+'&nbsp')
+    } document.write('<br>')
+    document.write('Tổng:'+'&nbsp'+tong)
+    // Tính tổng 30 số chia hết cho 7 đầu tiên
+    let n = parseInt(prompt('Nhập số lượng cần tính'));
+    let tong = 0
+    for (let i=1; i<=n; i++) {
+        tong+=i;
+    } tong*=7;
+    document.write('Tổng=' + tong);
+    // Fizzbuzz
+    for ( var i = 1; i <= 100; i++ )
+    {
+        if ( i%3 === 0 && i%5 === 0 )
+        {
+            document.write("FizzBuzz" + '<br>' );
+        }
+        else if ( i%3 === 0 )
+        {
+            document.write("Fizz" + '<br>' );
+        }
+        else if ( i%5 === 0 )
+        {
+            document.write("Buzz" + '<br>' );
+        }
+        else
+        {
+            document.write(i+'<br>');
+        }
+    }
+</script>
+</head>
+<body>
+
+</body>
+</html>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // In dãy fibonacci
+    let n = parseInt(prompt('Nhập số lượng cần in ra'));
+    let n1 = 0;
+    let n2 = 1;
+    let n3;
+    for (let i=0; i<=n; i++) {
+        n3 = n1+n2
+        n1=n2;
+        n2=n3;
+        document.write(n3+ '<br>')
+    }
+</script>
+</body>
+</html>
