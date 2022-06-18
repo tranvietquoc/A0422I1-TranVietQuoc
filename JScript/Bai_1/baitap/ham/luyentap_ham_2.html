@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1
+    function binhphuongSo(number) {
+        number*=number
+        document.write(number)
+    } binhphuongSo(parseFloat(prompt('Nhập số')))
+    // Bài 2
+    Tính diện tích
+    function tinhDientich(pi, r) {
+        s = pi*(r*r);
+        document.write('Diện tích: '+s)
+    } tinhDientich(3.14, parseFloat(prompt('Nhập R')))
+    document.write('<br>')
+    function tinhChuvi(pi, r) {
+        c=3.14*r*2
+        document.write('Chu vi: '+c)
+    } tinhChuvi(3.14, parseFloat(prompt('Nhập R')))
+    // Bài 3
+    function tinhGiaithua(n) {
+        let giaithua = 1;
+        for (let i=1; i<=n; i++) {
+            giaithua*=i;
+        }
+        document.write('Giai thừa: '+giaithua)
+    } tinhGiaithua(parseInt(prompt('Nhập n')));
+    // Bài 4
+    function ktSo(number) {
+        if (number==='number') {
+            alert('A')
+        }
+    } ktSo(prompt())
+    // Bài 5
+    function ktSo(a,b,c) {
+        if (a < b && b < c) {
+            document.write(a+'là số bé nhất')
+        } else if (b < a && b < c) {
+            document.write(b+'là số bé nhất')
+        } else {
+            document.write(c+'là số bé nhất')
+        }
+    }
+    ktSo(
+        prompt('Nhập a'),
+        prompt('Nhập b'),
+        prompt('Nhập c')
+    )
+
+</script>
+
+</body>
+</html>

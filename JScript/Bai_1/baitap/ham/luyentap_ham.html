@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1
+    function alertMessage() {
+        alert('Xin chào')
+    }
+    alertMessage()
+    // Bài 2
+    function ktSo(number) {
+        number++
+        document.write(number)
+    } ktSo(parseInt(prompt('Nhập')))
+    // Bài 3
+    function sosanhSo(a, b) {
+        if (a>b) {
+            alert('Số a > b')
+        }
+        if (a<b) {
+            alert('Tống: '+ (a+b))
+        }
+    } sosanhSo(parseInt(prompt('Nhập a')),parseInt(prompt('Nhập b')))
+    // Bài 4
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+    result = 0;
+    alert(result)
+    result = addNumbers();
+    alert(result)
+    // Bài 5
+    let a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let b=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function star(star) {
+        for (let i=0;i<a.length;i++)
+        {
+            if (a[i] == star){
+                alert(b[i]);
+            }
+        }
+    }
+    star(prompt('Nhập'))
+</script>
+</body>
+</html>
+
+
+</script>
+
+</body>
+</html>
