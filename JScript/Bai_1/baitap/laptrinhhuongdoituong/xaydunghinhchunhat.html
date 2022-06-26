@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="exampleCanvas" width="100" height="50">
+</canvas>
+<script>
+    class Rectangle{
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        Dientich() {
+            return (this.dai * this.rong);
+        }
+        Chuvi() {
+            return (this.dai + this.rong) / 2;
+        }
+    }
+    let chieuDai = parseInt(prompt("Nhập vào chiều dài: "));
+    let chieuRong = parseInt(prompt("Nhập vào chiều rộng: "));
+    let chuNhat = new Rectangle(chieuDai, chieuRong);
+    let dienTich = chuNhat.Dientich();
+    let chuVi = chuNhat.Chuvi();
+    document.write("Diện tích HCN: "+dienTich+" Chu vi HCN: "+chuVi);
+    document.write("<br><canvas id=\"canvasId\" width="+"\""+chieuDai+"\""+" height="+"\""+chieuRong+"\""+" style=\"border:1px solid #c3c3c3;\"></canvas>")
+    let context = document.getElementById("canvasId").getContext("2d")
+</script>
+
+</body>
+</html>
